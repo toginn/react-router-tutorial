@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 const App = () => {
   return (
@@ -14,6 +14,7 @@ const App = () => {
         <Link to="/invoices">Invoices</Link> |{" "}
         <Link to="/expenses">Expenses</Link>
       </nav>
+      <Outlet />
     </div>
   );
 };
